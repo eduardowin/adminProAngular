@@ -1,0 +1,16 @@
+<h3>
+    {{ leyenda }} - {{ progreso }}
+</h3>
+<div class="input-group">
+    <div class="custom-file">
+        <button class="btn btn-primary" type="button" id="inputGroupFileAddon03" (click)="cambiarValor(-5)">
+        <i class="mdi mdi-minus"></i></button>
+    </div>
+    <input type="text" class="form-control" name="progreso" [(ngModel)]="progreso">
+
+    <div class="input-group-btn">
+        <button class="btn btn-primary" type="button" id="inputGroupFileAddon03" (click)="cambiarValor(+5)">
+        <i class="mdi mdi-plus"></i>
+      </button>
+    </div>
+</div>
